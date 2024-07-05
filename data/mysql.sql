@@ -45,7 +45,7 @@ INSERT INTO `bannermid` (`id`, `img`) VALUES
 (2, 'https://s3-alpha-sig.figma.com/img/ca9d/ce3c/be0d9454b3adac819fb998692e417a4a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTYQWB~da9HN7Eat0EStNBCTadtztJZ2rTpr9ynLbgBXgA8qLGZEX6OPOm~Bm6wWY52RgyNOawTpeK78f3qXw9eIccsk0dAF7fFQ46-Scsa7FBy1Qt2MlHb7rSWqKZ7PkEyrtx-cSiyYi-hyiIMiDGr~KkUxKM7gGLQ7Gh~jZNLrufAQ1pssSoUL6JI9fvajEQDhV5Ic15C3YWhKXRcUuHtNfZrwkQEQM5ttEnh~uK3IAxT~xLdcxklhzZ1HIb-GrpHaM7dx-RaHUa-sNaBwKbIwPa7h7jJmvqcsgtPhyUBVVCfb6xT-gZeZo5OHKgPiaohID6UPepzWGoZZs6HxiQ__');
 
 
-CREATE TABLE `bannerbot` (
+CREATE TABLE `bannerbottom` (
   `id` int(5) NOT NULL,
   `img` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -54,7 +54,7 @@ CREATE TABLE `bannerbot` (
   ALTER TABLE `bannerbot`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
-INSERT INTO `bannerbot` (`id`, `img`) VALUES
+INSERT INTO `bannerbottom` (`id`, `img`) VALUES
 (3, 'https://s3-alpha-sig.figma.com/img/ca9d/ce3c/be0d9454b3adac819fb998692e417a4a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTYQWB~da9HN7Eat0EStNBCTadtztJZ2rTpr9ynLbgBXgA8qLGZEX6OPOm~Bm6wWY52RgyNOawTpeK78f3qXw9eIccsk0dAF7fFQ46-Scsa7FBy1Qt2MlHb7rSWqKZ7PkEyrtx-cSiyYi-hyiIMiDGr~KkUxKM7gGLQ7Gh~jZNLrufAQ1pssSoUL6JI9fvajEQDhV5Ic15C3YWhKXRcUuHtNfZrwkQEQM5ttEnh~uK3IAxT~xLdcxklhzZ1HIb-GrpHaM7dx-RaHUa-sNaBwKbIwPa7h7jJmvqcsgtPhyUBVVCfb6xT-gZeZo5OHKgPiaohID6UPepzWGoZZs6HxiQ__');
 
 
