@@ -29,7 +29,7 @@ CREATE TABLE `bannertop` (
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 INSERT INTO `bannertop` (`id`, `title`, `button`, `img`) VALUES
-(3,' Try to become better more than yesterday', 'Read more', 'https://s3-alpha-sig.figma.com/img/ca9d/ce3c/be0d9454b3adac819fb998692e417a4a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTYQWB~da9HN7Eat0EStNBCTadtztJZ2rTpr9ynLbgBXgA8qLGZEX6OPOm~Bm6wWY52RgyNOawTpeK78f3qXw9eIccsk0dAF7fFQ46-Scsa7FBy1Qt2MlHb7rSWqKZ7PkEyrtx-cSiyYi-hyiIMiDGr~KkUxKM7gGLQ7Gh~jZNLrufAQ1pssSoUL6JI9fvajEQDhV5Ic15C3YWhKXRcUuHtNfZrwkQEQM5ttEnh~uK3IAxT~xLdcxklhzZ1HIb-GrpHaM7dx-RaHUa-sNaBwKbIwPa7h7jJmvqcsgtPhyUBVVCfb6xT-gZeZo5OHKgPiaohID6UPepzWGoZZs6HxiQ__');
+(1,' Try to become better more than yesterday', 'Read more', 'https://s3-alpha-sig.figma.com/img/ca9d/ce3c/be0d9454b3adac819fb998692e417a4a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTYQWB~da9HN7Eat0EStNBCTadtztJZ2rTpr9ynLbgBXgA8qLGZEX6OPOm~Bm6wWY52RgyNOawTpeK78f3qXw9eIccsk0dAF7fFQ46-Scsa7FBy1Qt2MlHb7rSWqKZ7PkEyrtx-cSiyYi-hyiIMiDGr~KkUxKM7gGLQ7Gh~jZNLrufAQ1pssSoUL6JI9fvajEQDhV5Ic15C3YWhKXRcUuHtNfZrwkQEQM5ttEnh~uK3IAxT~xLdcxklhzZ1HIb-GrpHaM7dx-RaHUa-sNaBwKbIwPa7h7jJmvqcsgtPhyUBVVCfb6xT-gZeZo5OHKgPiaohID6UPepzWGoZZs6HxiQ__');
 
 
 CREATE TABLE `bannermid` (
@@ -55,7 +55,7 @@ CREATE TABLE `bannerbot` (
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 INSERT INTO `bannerbot` (`id`, `img`) VALUES
-(1, 'https://s3-alpha-sig.figma.com/img/ca9d/ce3c/be0d9454b3adac819fb998692e417a4a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTYQWB~da9HN7Eat0EStNBCTadtztJZ2rTpr9ynLbgBXgA8qLGZEX6OPOm~Bm6wWY52RgyNOawTpeK78f3qXw9eIccsk0dAF7fFQ46-Scsa7FBy1Qt2MlHb7rSWqKZ7PkEyrtx-cSiyYi-hyiIMiDGr~KkUxKM7gGLQ7Gh~jZNLrufAQ1pssSoUL6JI9fvajEQDhV5Ic15C3YWhKXRcUuHtNfZrwkQEQM5ttEnh~uK3IAxT~xLdcxklhzZ1HIb-GrpHaM7dx-RaHUa-sNaBwKbIwPa7h7jJmvqcsgtPhyUBVVCfb6xT-gZeZo5OHKgPiaohID6UPepzWGoZZs6HxiQ__');
+(3, 'https://s3-alpha-sig.figma.com/img/ca9d/ce3c/be0d9454b3adac819fb998692e417a4a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTYQWB~da9HN7Eat0EStNBCTadtztJZ2rTpr9ynLbgBXgA8qLGZEX6OPOm~Bm6wWY52RgyNOawTpeK78f3qXw9eIccsk0dAF7fFQ46-Scsa7FBy1Qt2MlHb7rSWqKZ7PkEyrtx-cSiyYi-hyiIMiDGr~KkUxKM7gGLQ7Gh~jZNLrufAQ1pssSoUL6JI9fvajEQDhV5Ic15C3YWhKXRcUuHtNfZrwkQEQM5ttEnh~uK3IAxT~xLdcxklhzZ1HIb-GrpHaM7dx-RaHUa-sNaBwKbIwPa7h7jJmvqcsgtPhyUBVVCfb6xT-gZeZo5OHKgPiaohID6UPepzWGoZZs6HxiQ__');
 
 
 CREATE TABLE `bannerdream` (
@@ -71,7 +71,7 @@ CREATE TABLE `bannerdream` (
   COMMIT;
 
   INSERT INTO `bannerdream` (`id`, `title`, `description`, `img`) VALUES
-(1, 'tract', 'Dream', 'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__'),
+(4, 'tract', 'Dream', 'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__'),
 
 CREATE TABLE `bannerslidemid1` (
   `id` int(5) NOT NULL,
@@ -86,7 +86,7 @@ CREATE TABLE `bannerslidemid1` (
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
   INSERT INTO `bannerslidemid1` (`id`, `title`, `button`, `img`, `description`) VALUES
-(1, 'Begin your experience', 'Read more', 'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__'),
+(5, 'Begin your experience', 'Read more', 'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__'),
 
 
   CREATE TABLE `bannerslidemid2` (
@@ -102,7 +102,7 @@ CREATE TABLE `bannerslidemid1` (
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
   INSERT INTO `bannerslidemid2` (`id`, `title`, `button`, `img`, `description`) VALUES
-(1, NULL, 'Read ++',  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', '\no'),
+(6, NULL, 'Read ++',  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', '\no'),
 
 
   CREATE TABLE `bannerslidemid3` (
@@ -117,7 +117,7 @@ CREATE TABLE `bannerslidemid1` (
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 INSERT INTO `bannerslidemid3` (`id`, `img`, `title`, `description`) VALUES
-(1,  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', 'Porsche Travel Experience. Driving fun meets wanderlust – inspiration with every kilometre.', 'See the journey as the destination. And discover the most beautiful corners of the world. In the sportiest way imaginable – at the wheel of a Porsche.'),
+(7,  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', 'Porsche Travel Experience. Driving fun meets wanderlust – inspiration with every kilometre.', 'See the journey as the destination. And discover the most beautiful corners of the world. In the sportiest way imaginable – at the wheel of a Porsche.'),
 
 
 
