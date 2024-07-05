@@ -49,9 +49,9 @@ CREATE TABLE `bannerbottom` (
   `id` int(5) NOT NULL,
   `img` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-  ALTER TABLE `bannerbot`
+  ALTER TABLE `bannerbottom`
   ADD PRIMARY KEY (`id`);
-  ALTER TABLE `bannerbot`
+  ALTER TABLE `bannerbottom`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 INSERT INTO `bannerbottom` (`id`, `img`) VALUES
