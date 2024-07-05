@@ -22,7 +22,7 @@
         try
         {
           $stmt = this -> $conn ->perpare("SELECT * FROM account WHERE name=? AND pass=?");
-          $stmt=bind_param("ss",$user,$pass);
+          $stmt -> bind_param("ss",$user,$pass);
           $stmt -> execute();
           $rs=$stmt->get_result();
           if($rs -> num_rows > 0)
