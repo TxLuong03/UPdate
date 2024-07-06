@@ -12,7 +12,7 @@
       $password="";
       $dbname="mysql";
 
-      $this=>$conn=new mysqli($servername,$username,$password,$dbname);
+      $this->$conn=new mysqli($servername,$username,$password,$dbname);
     }
 
     public function getA()
