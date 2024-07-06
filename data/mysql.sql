@@ -15,7 +15,7 @@ CREATE TABLE `account` (
 
 
 INSERT INTO `account` (`id`, `username`, `password`, `email`,) VALUES
-(100, 'Luong', '123', 'a@gmail.com', NULL, NULL);
+(12, 'Luong', '123', 'a@gmail.com', NULL, NULL);
 
 CREATE TABLE `bannertop` (
   `id` int(5) NOT NULL,
