@@ -31,7 +31,7 @@
         
       }
 
-      public function UpdateBannerSlideMid1()
+      public function UpdateBannerSlideMid1($id,$title,$img,$des)
       {
         $sql="UPDATE bannerslidemid1 SET title = ? , img=? des=?, WHERE id=? ";
         $stmt = $this -> $conn -> prepare($sql);
