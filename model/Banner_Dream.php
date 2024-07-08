@@ -29,7 +29,7 @@
         return $list;
         
       }
-      public function updateBannerDream($is,$title,$img,$des)
+      public function updateBannerDream($id,$title,$img,$des)
       {
         $sql="UPDATE bannerdream SET title=?, img=?, des=? WHERE id=?";
         $stmt= $this -> $conn -> prepare($sql);
