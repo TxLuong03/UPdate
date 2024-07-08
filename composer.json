@@ -1,0 +1,20 @@
+{
+    "name": "TxLuong03/cars-purchase",
+    "description": "try to become better",
+    "type": "library",
+    "authors": [
+        {
+            "name": "TxLuong03"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "AD\\": "./"
+        }
+    }
+
+
+}
