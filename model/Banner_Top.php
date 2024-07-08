@@ -59,14 +59,19 @@
       {
         $sql="UPDATE bannertop SET titlt=?, button=?, img=? WHERE id=?";
 
-        if($this -> $conn ->query($sql)===TRUE)
+        $stmt = $this -> $conn -> prepare($sql);
+        $stmt->bind_param("sssi",$title,$bt,$img,$id);
+        if($stmt->execute())
         {
-          header("location: ?act:homepage");
+          return true;
+          
         }
         else
         {
-          echo "ERROR"
+          throw new Exception("ERROR");
+          
         }
+        
       }
     }
 
