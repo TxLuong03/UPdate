@@ -31,11 +31,11 @@
         
       }
 
-      public function UpdateBannerSlideMid1($id,$title,$img,$des)
+      public function UpdateBannerSlideMid1($id,$title,$bt,$img,$des)
       {
-        $sql="UPDATE bannerslidemid1 SET title = ? , img=? des=?, WHERE id=? ";
+        $sql="UPDATE bannerslidemid1 SET title = ? ,button=? img=?, des=?, WHERE id=? ";
         $stmt = $this -> $conn -> prepare($sql);
-        $stmt->bind_param("sssi",$title,$img,$des,$id);
+        $stmt->bind_param("sssi",$title,$bb,$img,$des,$id);
         if($stmt->execute())
         {
           return true;
