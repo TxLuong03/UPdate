@@ -28,15 +28,15 @@ $banneryop=new Banner_Top();
                             <img src="current_image.jpg" alt="Current Image" class="img-thumbnail" id="currentImg">
                         </div>
                         <label for="img">Chọn hình ảnh mới</label>
-                        <input type="file" class="form-control-file" id="img" name="img">
+                        <input type="file" class="form-control-file" id="img" name="img" value="<?php echo $bannertop->getImg() ?>">
                     </div>
                     <div class="form-group">
                         <label for="title">Tiêu đề</label>
-                        <input type="text" class="form-control" id="title" name="title"  required>
+                        <input type="text" class="form-control" id="title" name="title"  value="<?php echo $bannertop->getTitle() ?>" required>
                     </div>
                     <div class="form-group">
                         <label for="content">Nội dung button</label>
-                        <textarea class="form-control" id="content" name="content" rows="1"  required></textarea>
+                        <input type="text" class="form-control" id="bt" name="bt"  value="<?php echo $bannertop->getButton() ?>" required>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Xác nhận sửa</button>
                 </form>
