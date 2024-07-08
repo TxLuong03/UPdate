@@ -14,61 +14,28 @@
 
         $this -> conn=new mysqli($nameserver,$username,$password,$dbname);
     }
-    public function getTextMid()
-      {
-          try
-          {
-            $stmt= $this -> $conn -> prepare ("SELECT img FROM bannermid WHERE id=2");
-            if(!$stmt)
-            {
-              throw new Exception("ERROR");
-            }
-            $stmt ->execute();
-            $rs = $stmt -> get_result();
-            if($rs-> num_rows > 0)
-            {
-              $row= $rs ->fetch_ossoc();
-              return $row['img'];
-            }
-            else 
-            {
-              throw new Exception("NO FOUND");
-            }
-          }
-          catch (Exception $e)
-          {
-            echo "Error ". $e ->getMessage();
-            
-          }
-        finally
-          {
-            $stmt -> close();
-            $this=>$conn->close();
-          }
+   public function getA(){
+        $listCart = [];
+        $sql = "SELECT * FROM textmid";
+        $result = $this->conn->query($sql);
+        while($row = $result->fetch_assoc()){
+            $listCart[] = $row;
+        }
+            return $listCart;
         
-      }
-      public function updateBannerMid($img){
-        try {
-            $stmt = $this->conn->prepare("UPDATE bannermid SET img =? WHERE id = 2");
-            $stmt->bind_param("s", $img);
-            if (!$stmt) 
-            {
-                throw new Exception("Prepare statement failed: " . $this->conn->error);
-            }
-            
-            $stmt->execute();
+    }
+
+    public function updateCartLast($id ,$title, $des){
+        $sql = "UPDATE cartlast SET title =?,des =? WHERE id =?";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bind_param("sssi", $title,$des, $id);
+        if($stmt->execute()){
             return true;
-        } 
-        catch (Exception $e) 
-        {
-            echo "Error: ". $e->getMessage();
-        } 
-        finally
-        {
-            $stmt->close();
-            $this->conn->close();
+        } else{
+            throw new Exception("Error: ". $this->conn->error);
         }
     }
+
     }
 ?>
 
