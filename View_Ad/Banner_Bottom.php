@@ -28,7 +28,7 @@ $bannerbottom=new Banner_Bottom();
                             <img src="current_image.jpg" alt="Current Image" class="img-thumbnail" id="currentImg">
                         </div>
                         <label for="img">Chọn hình ảnh mới</label>
-                        <input type="file" class="form-control-file" id="img" name="img" value="<?php echo $bannerbottom->getImg() ?>">
+                        <input type="file" class="form-control-file" id="img" name="img" value="<?php echo $bannerbottom->getBannerBottom() ?>">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Xác nhận sửa</button>
                 </form>
