@@ -55,13 +55,9 @@
           echo " NO RESULT";
         }
       }
-      public function UpdateBannerTop()
+      public function UpdateBannerTop($id,$title,$button,$img)
       {
-        $title=$_POST['title'];
-        $button=$_POST['bt'];
-        $img=$_POST['img'];
-
-        $sql="UPDATE bannertop SET titlt='$title', button='$button', img='$img' WHERE id=1";
+        $sql="UPDATE bannertop SET titlt=?, button=?, img=? WHERE id=?";
 
         if($this -> $conn ->query($sql)===TRUE)
         {
