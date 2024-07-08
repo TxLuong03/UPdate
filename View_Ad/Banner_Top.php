@@ -3,7 +3,9 @@
     header("Location: ?act=Signin");
     exit(); 
 ?>
+use AD\model\Banner_Top;
 
+$banneryop=new Banner_Top();
 
 <!DOCTYPE html>
 <html lang="en">
