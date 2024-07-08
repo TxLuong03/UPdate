@@ -130,7 +130,7 @@ INSERT INTO `bannerslidemid3` (`id`, `img`,`button`, `title`, `des`) VALUES
   ALTER TABLE `textmid`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
-  INSERT INTO `bannerslidemid2` (`id`, `title`, `des`) VALUES
+  INSERT INTO `textmid` (`id`, `title`, `des`) VALUES
 (8,'Porsche driving at it’s best – on the racetrack','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.');  
 
 
