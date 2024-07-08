@@ -69,7 +69,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="container form-container">
-        <h2 class="mb-4 text-center">Thông Tin Chi Tiết</h2>
+        <h2 class="mb-4 text-center" style="text-align:center;">Thông Tin Chỉnh Sửa</h2>
         <form action="?act=editForm" method="post">
             <div class="form-group">
                 <label for="id" class="form-label">ID (Chỉ Đọc):</label>
