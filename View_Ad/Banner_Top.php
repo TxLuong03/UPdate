@@ -5,7 +5,7 @@
 ?>
 use AD\model\Banner_Top;
 
-$banneryop=new Banner_Top();
+$bannertop=new Banner_Top();
 
 <!DOCTYPE html>
 <html lang="en">
