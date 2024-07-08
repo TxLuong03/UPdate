@@ -23,7 +23,7 @@ $items = $bannerdream->getA();
                 $url = '?act=processingBannerDream&id=' . urlencode($item["id"]) . 
                        '&title=' . urlencode($item["title"]) . 
                        '&img=' . urlencode($item["img"]) . 
-                       '&description=' . urlencode($item["des"]);
+                       '&des=' . urlencode($item["des"]);
                 ?>
                 <div class="col-md-4">
                     <div class="card mb-4">
