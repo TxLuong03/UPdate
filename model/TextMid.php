@@ -25,8 +25,8 @@
         
     }
 
-    public function updateCartLast($id ,$title, $des){
-        $sql = "UPDATE cartlast SET title =?,des =? WHERE id =?";
+    public function updateTextMid($id ,$title, $des){
+        $sql = "UPDATE textmid SET title =?,des =? WHERE id =?";
         $stmt = $this->conn->prepare($sql);
         $stmt->bind_param("sssi", $title,$des, $id);
         if($stmt->execute()){
