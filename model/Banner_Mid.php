@@ -51,15 +51,20 @@
         try {
             $stmt = $this->conn->prepare("UPDATE bannermid SET img =? WHERE id = 2");
             $stmt->bind_param("s", $img);
-            if (!$stmt) {
+            if (!$stmt) 
+            {
                 throw new Exception("Prepare statement failed: " . $this->conn->error);
             }
             
             $stmt->execute();
             return true;
-        } catch (Exception $e) {
+        } 
+        catch (Exception $e) 
+        {
             echo "Error: ". $e->getMessage();
-        } finally {
+        } 
+        finally
+        {
             $stmt->close();
             $this->conn->close();
         }
