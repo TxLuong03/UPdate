@@ -1,3 +1,26 @@
+<?php
+
+use AD\model\Text_Mid;
+
+if (!isset($_SESSION["user"])) {
+    header("Location: ?act=Signin");
+    exit();
+}
+
+$textmid=new Text_Mid();
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $id=$_POST['id'];
+    $title=$_POST['title'];
+    $des=$_POST['des'];
+    if($bannerbot->updateTextMid($id,$title,$des))
+    {
+        header("Location: ?act=home");
+        exit(); 
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
