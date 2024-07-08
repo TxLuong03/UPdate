@@ -15,11 +15,11 @@
                 <form action="your_login_script.php" method="post">
                     <div class="form-group">
                         <label for="username">Tên đăng nhập</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
+                        <input type="text" class="form-control" id="user" name="user" placeholder="Nhập tên đăng nhập" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Mật khẩu</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Nhập mật khẩu" required>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
                 </form>
