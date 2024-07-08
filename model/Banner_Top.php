@@ -55,7 +55,7 @@
           echo " NO RESULT";
         }
       }
-      public function save()
+      public function UpdateBannerTop()
       {
         $title=$_POST['title'];
         $button=$_POST['bt'];
