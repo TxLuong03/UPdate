@@ -7,7 +7,7 @@
       {
         session_unset();
         session_destroy();
-        header("location: ?act=SignIn");
+        header("location: ?act=SignIn.php");
         
       }
       public function SignIn()
