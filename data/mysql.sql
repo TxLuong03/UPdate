@@ -120,9 +120,18 @@ CREATE TABLE `bannerslidemid1` (
 INSERT INTO `bannerslidemid3` (`id`, `img`,`button`, `title`, `des`) VALUES
 (7,NULL,'Read',  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', '\no' ),
 
+ CREATE TABLE `textmid` (
+  `id` int(5) NOT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `des` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  ALTER TABLE `textmid`
+  ADD PRIMARY KEY (`id`);
+  ALTER TABLE `textmid`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
-
-
+  INSERT INTO `bannerslidemid2` (`id`, `title`, `des`) VALUES
+(8,'Porsche driving at it’s best – on the racetrack','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.');  
 
 
 
