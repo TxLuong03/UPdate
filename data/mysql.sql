@@ -70,7 +70,7 @@ CREATE TABLE `bannerdream` (
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
   COMMIT;
 
-  INSERT INTO `bannerdream` (`id`, `title`, `description`, `img`) VALUES
+  INSERT INTO `bannerdream` (`id`, `title`, `des`, `img`) VALUES
 (4, 'tract', 'Dream', 'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__'),
 
 CREATE TABLE `bannerslidemid1` (
@@ -85,7 +85,7 @@ CREATE TABLE `bannerslidemid1` (
   ALTER TABLE `bannerslidemid1`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
-  INSERT INTO `bannerslidemid1` (`id`, `title`, `button`, `img`, `description`) VALUES
+  INSERT INTO `bannerslidemid1` (`id`, `title`, `button`, `img`, `des`) VALUES
 (5, 'Begin your experience', 'Read more', 'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__'),
 
 
@@ -101,13 +101,14 @@ CREATE TABLE `bannerslidemid1` (
   ALTER TABLE `bannerslidemid2`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
-  INSERT INTO `bannerslidemid2` (`id`, `title`, `button`, `img`, `description`) VALUES
+  INSERT INTO `bannerslidemid2` (`id`, `title`, `button`, `img`, `des`) VALUES
 (6, NULL, 'Read ++',  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', '\no'),
 
 
   CREATE TABLE `bannerslidemid3` (
   `id` int(5) NOT NULL,
   `img` varchar(1000) DEFAULT NULL,
+  `button` varchar(100) DEFAULT NULL,
   `title` varchar(100) DEFAULT NULL,
   `description` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -116,8 +117,8 @@ CREATE TABLE `bannerslidemid1` (
   ALTER TABLE `bannerslidemid3`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
-INSERT INTO `bannerslidemid3` (`id`, `img`, `title`, `description`) VALUES
-(7,  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', 'Porsche Travel Experience. Driving fun meets wanderlust – inspiration with every kilometre.', 'See the journey as the destination. And discover the most beautiful corners of the world. In the sportiest way imaginable – at the wheel of a Porsche.'),
+INSERT INTO `bannerslidemid3` (`id`, `img`,`button`, `title`, `des`) VALUES
+(7,NULL,'Read',  'https://s3-alpha-sig.figma.com/img/d240/0080/5e2f829a62598286fe107ac1d4f36c0c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ij8g2NWoAuhJ-ZePwHtE0qYeVQJl2mQuGaHdTKLerM-WU~7va~2aeAneBROmy2~BsObvHJs2MkxOjr5n1ey7TTvb7wnSlKq2goQ5iaeLW0wp38tHHWpsMK8OPLzCCfQ3OxUbNpXyvTWxPDbrIUIR91S3TD3Sv1Jl4eKNv1JbA5krXR1r78i1jd1ufoWlzrD2Q3FAvqUi9k1NGPIPCQNL80tbSZqwHB0te6gS7hrQ87h2-v6QFyT5UoItAB2WfHbL03lINIx4jXP5XQ9yzOzM~2PMa6xlUoesui-HkDcKfC-D89izFsNyH3hryd4XLxTso-XnmVUhg0kYUxJf4KMgig__', '\no' ),
 
 
 
