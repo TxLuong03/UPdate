@@ -23,27 +23,49 @@
         }
     </style>
 </head>
+<?php
+    use AD\model\Banner_Dream;
+
+ if (!isset($_SESSION["user"])) {
+    header("Location: ?act=Signin");
+    exit();
+}  
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $id = $_POST["id"];
+    $title = $_POST["title"];
+    $image = $_POST["img"];
+    $description = $_POST["des"];
+
+    $bannerdream=new Banner_Dream();
+
+    if($cartnav->updateBannerDream($id,$title,$img,$des) == true){
+        header("Location:?act=Banner_Dream");
+    }else{
+        echo "Error";
+    }
+}
+?>
 <body>
     <div class="container form-container">
         <form action="/submit-edit" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="id">ID (Không thể thay đổi):</label>
-                <input type="text" class="form-control" id="id" name="id" value="123" readonly>
+                <label for="id">ID</label>
+                <input type="text" class="form-control" id="id" name="id" value="<?php echo htmlspecialchars($_GET['id'] ?? '', ENT_QUOTES); ?> readonly>
             </div>
 
             <div class="form-group">
                 <label for="title">Title:</label>
-                <input type="text" class="form-control" id="title" name="title" value="Sample Title">
+                <input type="text" class="form-control" id="title" name="title" alue="<?php echo htmlspecialchars($_GET['title'] ?? '', ENT_QUOTES); ?>" requỉed>
             </div>
 
             <div class="form-group">
                 <label for="img">Image:</label>
-                <input type="file" class="form-control-file" id="img" name="img">
+                <input type="file" class="form-control-file" id="img" name="img" value="<?php echo htmlspecialchars($_GET['img'] ?? '', ENT_QUOTES); ?>" required>
             </div>
 
             <div class="form-group">
                 <label for="description">Description:</label>
-                <textarea class="form-control" id="description" name="description" rows="4">Sample description...</textarea>
+                <textarea class="form-control" id="description" name="description" rows="2" value="<?php echo htmlspecialchars($_GET['des'] ?? '', ENT_QUOTES); ?>" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
