@@ -1,12 +1,12 @@
 <?php
-    if(!isset($_SESSION["user"]))
-    header("Location: ?act=Signin");
-    exit(); 
+    if(!isset($_SESSION["user"])) {
+        header("Location: ?act=Signin");
+        exit();
+    }
+    use AD\model\Banner_Mid;
+
+    $bannermid = new Banner_Mid();
 ?>
-use AD\model\Banner_Mid;
-
-$bannermid=new Banner_Mid();
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +15,31 @@ $bannermid=new Banner_Mid();
     <title>Form Sửa Thông Tin</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container form-container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <h3 class="text-center mt-5">Sửa Thông Tin</h3>
+            <div class="col-md-8">
+                <h3 class="text-center">Sửa Thông Tin</h3>
                 <form action="your_update_script.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="currentImg">Hình ảnh hiện tại</label>
