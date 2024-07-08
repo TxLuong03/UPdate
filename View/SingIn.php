@@ -30,6 +30,8 @@
                         <input type="password" class="form-control" id="re_pass" name="re_pass" placeholder="Nhập lại mật khẩu" required>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                    <br> 
+            <p style="color: red;"> <?php echo $not ?></p>
                 </form>
             </div>
         </div>
