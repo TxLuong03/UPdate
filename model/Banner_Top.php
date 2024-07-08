@@ -58,7 +58,7 @@
       public function save()
       {
         $title=$_POST['title'];
-        $button=$_POST['button'];
+        $button=$_POST['bt'];
         $img=$_POST['img'];
 
         $sql="UPDATE bannertop SET titlt='$title', button='$button', img='$img' WHERE id=1";
