@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $id = $_POST["id"];
     $title = $_POST["title"];
     $image = $_POST["img"];
-    $description = $_POST["des"];
+    $des = $_POST["des"];
 
     $bannerdream=new Banner_Dream();
 
@@ -65,7 +65,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <div class="form-group">
                 <label for="description">Description:</label>
-                <textarea class="form-control" id="description" name="description" rows="2" value="<?php echo htmlspecialchars($_GET['des'] ?? '', ENT_QUOTES); ?>" required></textarea>
+                <textarea class="form-control" id="des" name="des" rows="2" value="<?php echo htmlspecialchars($_GET['des'] ?? '', ENT_QUOTES); ?>" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
