@@ -20,7 +20,7 @@ $items = $bannerdream->getA();
             <?php foreach ($items as $item): ?>
                 <?php
                 // Xây dựng URL với các tham số
-                $url = '?act=processingCartNav&id=' . urlencode($item["id"]) . 
+                $url = '?act=processingBannerDream&id=' . urlencode($item["id"]) . 
                        '&title=' . urlencode($item["title"]) . 
                        '&img=' . urlencode($item["img"]) . 
                        '&description=' . urlencode($item["des"]);
