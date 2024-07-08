@@ -22,6 +22,8 @@
                         <input type="password" class="form-control" id="pass" name="pass" placeholder="Nhập mật khẩu" required>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                    <p style="color: red;"> 
+                <?php echo $not ?> </p>
                 </form>
             </div>
         </div>
