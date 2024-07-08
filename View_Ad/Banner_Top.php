@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION["user"]))
+    header("Location: ?act=Signin");
+    exit(); 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
