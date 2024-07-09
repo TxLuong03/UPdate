@@ -54,17 +54,18 @@
       public function updateBannerMid($id, $img) {
           try {
               $sql = "UPDATE bannermid SET img = '$img' WHERE id = $id";
-              $result = $this->conn->query($sql);
+              $stmt = $this->conn->prepare($sql);
       
               if ($result === false) {
                   throw new Exception("Execute statement failed: " . $this->conn->error);
               }
-      
+              $stmt->execute([$img,$id]);
               return true;
           } catch (Exception $e) {
               echo "Error: " . $e->getMessage();
               return false;
           } finally {
+              $stmt->close();
               $this->conn->close();
           }
       }
