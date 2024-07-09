@@ -51,7 +51,7 @@
                         <li ><a href="">Events</a></li>
                     </ul>
                     <ul class="menu_top_right">
-                        <li ><a href="">My Account</a></li>
+                        <li ><a href=""> <?php echo " " .$_SESSION["user"] ?></a></li>
                         <li ><a href="">Contact</a></li>
                         <li ><a href="">Menu</a></li>
                     </ul>
@@ -65,26 +65,17 @@
                     <img src="..\img\next.png" class="icon">
                 </button>
             </div>
-            <div class="slides">
-                <div class="slide">
-                    <img src="..\img\slide_top_1.jpg" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="..\img\slide_top_1.jpg" alt="Slide 2">
-                </div>
-                <div class="slide">
-                    <img src="..\img\slide_top_1.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="..\img\slide_top_1.jpg" alt="Slide 4">
-                </div>
-                <div class="slide">
-                    <img src="..\img\slide_top_1.jpg" alt="Slide 5">
-                </div>
-                <div class="slide">
-                    <img src="..\img\slide_top_1.jpg" alt="Slide 6">
-                </div>
-            </div>
+             <?php
+                    foreach ($bannertop->getA() as $value) {
+                        echo '
+                            <div class="slides">
+                                <div class="slide">
+                                    <img src="' . $value["img"] . '" alt="Slide 1">
+                                </div>
+                            </div>
+                          '
+                        }
+                ?>
              <?php
                     foreach ($bannertop->getA() as $value) {
                         echo '
