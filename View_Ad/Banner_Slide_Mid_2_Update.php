@@ -45,10 +45,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $img = $_POST["img"];
     $des = $_POST["des"];
 
-    $bannerdream = new Banner_Dream();
+    $bannerslidemid2 = new Banner_Slide_Mid_2();
 
-    if($bannerdream->updateBannerDream($id, $title,$bt, $img, $des) == true){
-        header("Location:?act=Banner_Slide_Mid_1");
+    if($bannerslidemid2->UpdateBannerSlideMid2($id, $title,$bt, $img, $des) == true){
+        header("Location:?act=Banner_Slide_Mid_2");
     } else {
         echo "Error";
     }
