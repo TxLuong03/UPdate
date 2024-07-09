@@ -44,10 +44,10 @@
                     <div class="form-group">
                         <label for="currentImg">Hình ảnh hiện tại</label>
                         <div class="mb-3">
-                            <img src="current_image.jpg" alt="Current Image" class="img-thumbnail" id="currentImg">
+                            <img src="<?php echo $bannertop->getImg() ?>" alt="Current Image" class="img-thumbnail" id="currentImg">
                         </div>
                         <label for="img">Chọn hình ảnh mới</label>
-                        <input type="file" class="form-control-file" id="img" name="img" value="<?php echo $bannertop->getImg() ?>">
+                        <input type="file" class="form-control-file" id="img" name="img">
                     </div>
                     <div class="form-group">
                         <label for="title">Tiêu đề</label>
