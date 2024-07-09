@@ -13,6 +13,10 @@
         $dbname="mysql";
 
         $this -> conn=new mysqli($nameserver,$username,$password,$dbname);
+
+         if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
     }
     public function getBannerMid()
       {
@@ -47,29 +51,27 @@
           }
         
       }
-      public function updateBannerMid($img){
+      public function updateBannerMid($id, $img) {
         try {
-            $stmt = $this->conn->prepare("UPDATE bannermid SET img =? WHERE id = 2");
-            $stmt->bind_param("s", $img);
-            if (!$stmt) 
-            {
+            $stmt = $this->conn->prepare("UPDATE bannermid SET img = ? WHERE id = ?");
+            if (!$stmt) {
                 throw new Exception("Prepare statement failed: " . $this->conn->error);
             }
-            
+            $stmt->bind_param("si", $img, $id); 
             $stmt->execute();
             return true;
-        } 
-        catch (Exception $e) 
-        {
-            echo "Error: ". $e->getMessage();
-        } 
-        finally
-        {
-            $stmt->close();
+        } catch (Exception $e) {
+            echo "Error: " . $e->getMessage();
+            return false;
+        } finally {
+            if (isset($stmt)) {
+                $stmt->close();
+            }
             $this->conn->close();
+          }
         }
-    }
-    }
+
+}
 ?>
 
 
