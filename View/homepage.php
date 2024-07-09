@@ -1,3 +1,28 @@
+<?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
+    use AD\model\Banner_Top;
+    use AD\model\Banner_Mid;
+    use AD\model\Banner_Bottom;
+    use AD\model\Banner_Dream;
+    use AD\model\Banner_Slide_Mid_1;
+    use AD\model\Banner_Slide_Mid_2;
+    use AD\model\Banner_Slide_Mid_3;
+    use AD\model\TextMid;
+
+    require_once "./connect/connect.php";
+
+    $bannertop=new Banner_Top();
+    $bannermid=new Banner_Mid();
+    $bannerbottom=new Banner_Bottom();
+    $bannerdream=new Banner_Dream();
+    $bannerslidemid1=new Banner_Slide_Mid_1();
+    $bannerslidemid2=new Banner_Slide_Mid_2();   
+    $bannerslidemid3=new Banner_Slide_Mid_3();
+    $textmid=new TextMid();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,7 +121,7 @@
             </div>
         </div>
         <div class="center_image">
-            <img src="..\img\img_font.jpg">
+            <img src=<?php echo $bannermid->getBannerMid() ?>>
         </div>
         <div class="center_slide">
             <div class="center_slide_container">
@@ -274,7 +299,7 @@
                     </div>
                 </div>
                  <div class="center_image">
-                    <img src="..\img\img_font_2.jpg">
+                    <img src=<?php echo $bannerbottom->getBannerBotyom() ?>>
                 </div>
             </div>
         </div>
