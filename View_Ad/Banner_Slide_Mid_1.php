@@ -22,7 +22,7 @@ $items = $bannerslidemid1->getA();
                 // Xây dựng URL với các tham số
                 $url = '?act=processingBannerSlideMid1Update&id=' . urlencode($item["id"]) . 
                        '&title=' . urlencode($item["title"]) . 
-                       '&button=' . urlencode($item["button"]).
+                       '&button_text=' . urlencode($item["button"]).
                        '&img=' . urlencode($item["img"]) . 
                        '&des=' . urlencode($item["des"]) ;
                        
