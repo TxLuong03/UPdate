@@ -85,10 +85,16 @@
                     <img src="..\img\slide_top_1.jpg" alt="Slide 6">
                 </div>
             </div>
-            <div class="text_slide">
-                <p>Porsche Experience <br> Make it Yours.</p>
-                <input type="button" name="read" class="read" value="Read More">
-            </div>
+             <?php
+                    foreach ($bannertop->getA() as $value) {
+                        echo '
+                            <div class="text_slide">
+                                <p>' . $value["title"] . '<!--Porsche Experience <br> Make it Yours.--></p>
+                                <input type="button" name="read" class="read" value="' . $value["button"] . '">
+                            </div>
+                            '
+                        }
+                ?>
         </div>
     </div>
     <div class="center">
