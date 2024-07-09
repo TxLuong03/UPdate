@@ -52,24 +52,23 @@
         
       }
       public function updateBannerMid($id, $img) {
-        try {
-            $stmt = $this->conn->prepare("UPDATE bannermid SET img = ? WHERE id = ?");
-            if (!$stmt) {
-                throw new Exception("Prepare statement failed: " . $this->conn->error);
-            }
-            $stmt->bind_param("si", $img, $id); 
-            $stmt->execute();
-            return true;
-        } catch (Exception $e) {
-            echo "Error: " . $e->getMessage();
-            return false;
-        } finally {
-            if (isset($stmt)) {
-                $stmt->close();
-            }
-            $this->conn->close();
+          try {
+              $sql = "UPDATE bannermid SET img = '$img' WHERE id = $id";
+              $result = $this->conn->query($sql);
+      
+              if ($result === false) {
+                  throw new Exception("Execute statement failed: " . $this->conn->error);
+              }
+      
+              return true;
+          } catch (Exception $e) {
+              echo "Error: " . $e->getMessage();
+              return false;
+          } finally {
+              $this->conn->close();
           }
-        }
+      }
+
 
 }
 ?>
