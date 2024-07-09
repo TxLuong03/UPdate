@@ -14,6 +14,10 @@ class bannerbottom
         $dbName = "mysql";
 
         $this->conn = new mysqli($server, $username, $password, $dbName);
+
+         if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
     }
 
     public function getBannerBottom(){
