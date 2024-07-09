@@ -142,64 +142,24 @@
                             <img src="../img/center_slide1.jpg" alt="Slide 6">
                         </div>
                         <div class="ct_slide">
-                            <img src="../img/center_slide_1.jpg" alt="Slide 1">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
+                             <?php
+                                foreach($bannerslidemid3->getA() as $value) {
+                                    echo'
+                                        <img src="' . $value["img"] . '" alt="">
+                                        <div class="ct_slide_text">
+                                            <p>'. $value["title"] . '</p>
+                                            <p class="cst">Discover and Learn</p>
+                                            <p class="cst cst_mar">' . $value["des"] . '</p>    
+                                            <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
+                                        </div>
+                                    '}
+                                ?>
                         </div>
                         <div class="ct_slide ">
                             <img src="../img/center_slide_2.jpg" alt="Slide 2">
                             <div class="ct_slide_text">
                                 <p>Track Experience</p>
                                 <p class="cst">Advanced racetrack tuition</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide ">
-                            <img src="../img/center_slide_3.jpg" alt="Slide 3">
-                            <div class="ct_slide_text">
-                                <p>Boots</p>
-                                <p class="cst">Build to your full potential</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_4.jpg" alt="Slide 4">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_5.jpg" alt="Slide 5">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_6.jpg" alt="Slide 6">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_1.jpg" alt="Slide 1">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
                                 <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
                                 <input type="button" name="readmore" value="Read More" class="read ctr">
                             </div>
@@ -224,67 +184,46 @@
                 <div class="ct_slides_wrapper">
                     <div class="ct_slides  ct_slide_js_2">
                         <div class="ct_slide">
-                            <img src="../img/center_slide_1.jpg" alt="Slide 1">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
+                            <?php
+                                foreach($bannerslidemid3->getA() as $value) {
+                                    echo'
+                                    <img src="' . $value["img"] . '" alt="">
+                                    <div class="ct_slide_text">
+                                        <p>'. $value["title"] . '</p>
+                                        <p class="cst">Discover and Learn</p>
+                                        <p class="cst cst_mar">' . $value["des"] . '</p>    
+                                        <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
+                                    </div>
+                                '}
+                            ?>
                         </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_2.jpg" alt="Slide 2">
-                            <div class="ct_slide_text">
-                                <p>Track Experience</p>
-                                <p class="cst">Advanced racetrack tuition</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
+                         <div class="ct_slide">
+                            <?php
+                                foreach($bannerslidemid3->getA() as $value) {
+                                    echo'
+                                    <img src="' . $value["img"] . '" alt="">
+                                    <div class="ct_slide_text">
+                                        <p>'. $value["title"] . '</p>
+                                        <p class="cst">Discover and Learn</p>
+                                        <p class="cst cst_mar">' . $value["des"] . '</p>    
+                                        <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
+                                    </div>
+                                '}
+                            ?>
                         </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_3.jpg" alt="Slide 3">
-                            <div class="ct_slide_text">
-                                <p>Boots</p>
-                                <p class="cst">Build to your full potential</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_4.jpg" alt="Slide 4">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_5.jpg" alt="Slide 5">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_6.jpg" alt="Slide 6">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_1.jpg" alt="Slide 1">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
+                         <div class="ct_slide">
+                            <?php
+                                foreach($bannerslidemid3->getA() as $value) {
+                                    echo'
+                                    <img src="' . $value["img"] . '" alt="">
+                                    <div class="ct_slide_text">
+                                        <p>'. $value["title"] . '</p>
+                                        <p class="cst">Discover and Learn</p>
+                                        <p class="cst cst_mar">' . $value["des"] . '</p>    
+                                        <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
+                                    </div>
+                                '}
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -294,8 +233,13 @@
             <div class="ct_content_container">
                 <div class="ct_content_text">
                     <div class="content_text">
-                        <div class="content_item" style="font-size: 28px;">Porsche driving at it’s best – on the racetrack </div>
-                        <div class="content_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        <?php 
+                                foreach($textmid->getA() as $value) {
+                                    echo'
+                                        <div class="content_item" style="font-size: 28px;">'. $value["title"] . '<!--Porsche driving at it’s best – on the racetrack --></div>
+                                        <div class="content_item">'. $value["title"] . '<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.--></div>
+                                   '}
+                         ?>               
                     </div>
                 </div>
                  <div class="center_image">
@@ -316,70 +260,50 @@
                         <img src="..\img\next.png" class="icon ct_icon">
                     </button>
                 </div>
+//Slide 3
                 <div class="ct_slides_wrapper">
                     <div class="ct_slides  ct_slide_js_1">
                         <div class="ct_slide">
-                            <img src="../img/center_slide_1.jpg" alt="Slide 1">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide ">
-                            <img src="../img/center_slide_2.jpg" alt="Slide 2">
-                            <div class="ct_slide_text">
-                                <p>Track Experience</p>
-                                <p class="cst">Advanced racetrack tuition</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide ">
-                            <img src="../img/center_slide_3.jpg" alt="Slide 3">
-                            <div class="ct_slide_text">
-                                <p>Boots</p>
-                                <p class="cst">Build to your full potential</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
+                            <?php 
+                                foreach($bannerslidemid3->getA() as $value) {
+                                    echo'
+                                    <img src="' . $value["img"] . '" alt=" ">
+                                    <div class="ct_slide_text">
+                                        <p>'. $value["title"] . '</p>
+                                        <p class="cst">Discover and Learn</p>
+                                        <p class="cst cst_mar">' . $value["des"] . '</p>    
+                                        <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
+                                    </div>
+                                '}
+                            ?>
                         </div>
                         <div class="ct_slide">
-                            <img src="../img/center_slide_4.jpg" alt="Slide 4">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
+                            <?php 
+                                foreach($bannerslidemid3->getA() as $value) {
+                                    echo'
+                                    <img src="' . $value["img"] . '" alt=" ">
+                                    <div class="ct_slide_text">
+                                        <p>'. $value["title"] . '</p>
+                                        <p class="cst">Discover and Learn</p>
+                                        <p class="cst cst_mar">' . $value["des"] . '</p>    
+                                        <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
+                                    </div>
+                                '}
+                            ?>
                         </div>
                         <div class="ct_slide">
-                            <img src="../img/center_slide_5.jpg" alt="Slide 5">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_6.jpg" alt="Slide 6">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
-                        </div>
-                        <div class="ct_slide">
-                            <img src="../img/center_slide_1.jpg" alt="Slide 1">
-                            <div class="ct_slide_text">
-                                <p>Master the basics</p>
-                                <p class="cst">Discover and Learn</p>
-                                <p class="cst cst_mar">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
-                                <input type="button" name="readmore" value="Read More" class="read ctr">
-                            </div>
+                            <?php 
+                                foreach($bannerslidemid3->getA() as $value) {
+                                    echo'
+                                    <img src="' . $value["img"] . '" alt=" ">
+                                    <div class="ct_slide_text">
+                                        <p>'. $value["title"] . '</p>
+                                        <p class="cst">Discover and Learn</p>
+                                        <p class="cst cst_mar">' . $value["des"] . '</p>    
+                                        <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
+                                    </div>
+                                '}
+                            ?>
                         </div>
                     </div>
                 </div>
