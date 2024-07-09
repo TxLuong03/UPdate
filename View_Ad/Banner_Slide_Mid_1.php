@@ -22,7 +22,7 @@ $items = $bannerslidemid1->getA();
                 // Xây dựng URL với các tham số
                 $url = '?act=processingBannerSlideMid1Update&id=' . urlencode($item["id"]) . 
                        '&title=' . urlencode($item["title"]) . 
-                       '&button_text=' . urlencode($item["button_text"]).
+                       '&button=' . urlencode($item["button"]).
                        '&img=' . urlencode($item["img"]) . 
                        '&des=' . urlencode($item["des"]) ;
                        
@@ -33,7 +33,7 @@ $items = $bannerslidemid1->getA();
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $item['title']; ?></h5>
                             <p class="card-text"><?php echo $item['des']; ?></p>
-                            <a href="<?php echo $url; ?>" class="btn btn-primary"><?php echo $item['button_text']; ?></a>
+                            <a href="<?php echo $url; ?>" class="btn btn-primary"><?php echo $item['button']; ?></a>
                         </div>
                     </div>
                 </div>
