@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                           '
-                        }
+                        ;}
                 ?>
              <?php
                     foreach ($bannertop->getA() as $value) {
@@ -84,7 +84,7 @@
                                 <input type="button" name="read" class="read" value="' . $value["button"] . '">
                             </div>
                             '
-                        }
+                        ;}
                 ?>
         </div>
     </div>
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                             '
-                        }
+                       ; }
                     ?>
             </div>
         </div>
@@ -141,7 +141,7 @@
                                             <p class="cst cst_mar">' . $value["des"] . '</p>    
                                             <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
                                         </div>
-                                    '}
+                                    ';}
                                 ?>
                         </div>
                         <div class="ct_slide ">
@@ -183,7 +183,7 @@
                                         <p class="cst cst_mar">' . $value["des"] . '</p>    
                                         <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
                                     </div>
-                                '}
+                                ';}
                             ?>
                         </div>
                          <div class="ct_slide">
@@ -211,7 +211,7 @@
                                         <p class="cst cst_mar">' . $value["des"] . '</p>    
                                         <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
                                     </div>
-                                '}
+                                ';}
                             ?>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
                                     echo'
                                         <div class="content_item" style="font-size: 28px;">'. $value["title"] . '<!--Porsche driving at it’s best – on the racetrack --></div>
                                         <div class="content_item">'. $value["title"] . '<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.--></div>
-                                   '}
+                                   ';}
                          ?>               
                     </div>
                 </div>
@@ -263,7 +263,7 @@
                                         <p class="cst cst_mar">' . $value["des"] . '</p>    
                                         <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
                                     </div>
-                                '}
+                                ';}
                             ?>
                         </div>
                         <div class="ct_slide">
@@ -291,7 +291,7 @@
                                         <p class="cst cst_mar">' . $value["des"] . '</p>    
                                         <input type="button" name="readmore" value="' . $value["button"] . '" class="read ctr">
                                     </div>
-                                '}
+                                ';}
                             ?>
                         </div>
                     </div>
