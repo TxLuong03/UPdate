@@ -12,6 +12,10 @@ class home{
         $dbName = "myDataWeb";
 
         $this->conn = new mysqli($server, $username, $password, $dbName);
+
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
     }
 
 }
