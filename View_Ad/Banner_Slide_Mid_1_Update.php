@@ -24,7 +24,7 @@
     </style>
 </head>
 <?php
-use AD\model\Banner_Dream;
+use AD\model\Banner_Slide_Mid_1;
 
 if (!isset($_SESSION["user"])) {
     header("Location: ?act=Signin");
