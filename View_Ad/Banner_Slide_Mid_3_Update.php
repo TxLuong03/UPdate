@@ -47,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $bannerslidemid3 = new Banner_Slide_Mid_3();
 
-    if($bannerslidemid3->updateBannerSlideMid3($id, $title,$bt, $img, $des) == true){
+    if($bannerslidemid3->UpdateBannerSlideMid3($id, $title,$bt, $img, $des) == true){
         header("Location:?act=Banner_Slide_Mid_3");
     } else {
         echo "Error";
