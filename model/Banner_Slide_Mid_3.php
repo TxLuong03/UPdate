@@ -13,40 +13,47 @@
         $dbname="mysql";
 
         $this -> $conn = new mysqli($servername,$username,$pass,$dbname);
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
         
       }
 
 
       public function getA()
-      {
-        $list=[];
-        $sql="SELECT * FROM bannerslidemid1";
-        $rs = $this -> $conn -> query($sql);
-        while ( $row -> num_rows >0 )
-          {
-            $list[]=$row;
-            
-          }
-        return $list;
+        {
+            $list = [];
+            $sql = "SELECT * FROM bannerslidemid3";
+            $result = $this->conn->query($sql);
         
-      }
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $list[] = $row;
+                }
+            } else {
+                echo "Không có dữ liệu từ câu truy vấn.";
+            }
+        
+            return $list;
+        }
 
       public function UpdateBannerSlideMid3($id,$title,$bt,$img,$des)
       {
-        $sql="UPDATE bannerslidemid1 SET title = ? ,button=?, img=?, des=?, WHERE id=? ";
+        try{
+        $sql="UPDATE bannerslidemid3 SET title = ? ,button=? img=?, des=?, WHERE id=? ";
         $stmt = $this -> $conn -> prepare($sql);
-        $stmt->bind_param("sssi",$title,$bt,$img,$des,$id);
-        if($stmt->execute())
-        {
-          return true;
-          
+        if (!$stmt) {
+            throw new Exception("Prepare statement failed: " . $this->conn->error);
         }
-        else
-        {
-          throw new Exception("ERROR");
-          
+        $stmt->execute([$title,$bt, $img, $des, $id]);
+        return true;
         }
-        
+          catch (Exception $e) {
+          echo "Error: " . $e->getMessage();
+      } finally {
+          $stmt->close();
+          $this->conn->close();
+      }
       }
     }
 
