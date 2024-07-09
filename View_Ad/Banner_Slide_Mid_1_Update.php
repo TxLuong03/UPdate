@@ -45,9 +45,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $img = $_POST["img"];
     $des = $_POST["des"];
 
-    $bannerdream = new Banner_Dream();
+    $bannerslidemid1 = new Banner_Slide_Mid_1();
 
-    if($bannerdream->updateBannerDream($id, $title,$bt, $img, $des) == true){
+    if($bannerslidemid1->UpdateBannerSlideMid1($id, $title,$bt, $img, $des) == true){
         header("Location:?act=Banner_Slide_Mid_1");
     } else {
         echo "Error";
