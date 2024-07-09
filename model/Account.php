@@ -14,6 +14,10 @@
         $dbname="mysql";
 
         $this -> conn=new mysqli($nameserver,$username,$password,$dbname);
+
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
         
       }
 
