@@ -97,27 +97,19 @@
                 <p>Your dreams. Our drive.</p>
             </div>
             <div class="dream_row">
-                <div class="dream_row_c">
-                    <img src="..\img\dream_track.jpg" >
-                    <div class="overlay_content">
-                        <p>Track</p>
-                        <img src="..\img\next_white.png">
-                    </div>
-                </div>
-                <div class="dream_row_c">
-                    <img src="..\img\dream_ice.jpg">
-                    <div class="overlay_content">
-                        <p>Ice</p>
-                        <img src="..\img\next_white.png">
-                    </div>
-                </div>
-                <div class="dream_row_c">
-                    <img src="..\img\dream_traval.jpg">
-                    <div class="overlay_content">
-                        <p>Travel</p>
-                        <img src="..\img\next_white.png">
-                    </div>
-                </div>
+                <?php
+                    foreach ($bannerdream->getA() as $value) {
+                        echo '
+                            <div class="dream_row_c">
+                                <img src="' . $value["img"] . '" >
+                                <div class="overlay_content">
+                                    <p>' . $value["title"] . '</p>
+                                    <img src="..\img\next_white.png">
+                                </div>
+                            </div>
+                            '
+                        }
+                    ?>
             </div>
         </div>
         <div class="center_image">
@@ -143,7 +135,7 @@
                         </div>
                         <div class="ct_slide">
                              <?php
-                                foreach($bannerslidemid3->getA() as $value) {
+                                foreach($bannerslidemid1->getA() as $value) {
                                     echo'
                                         <img src="' . $value["img"] . '" alt="">
                                         <div class="ct_slide_text">
@@ -185,7 +177,7 @@
                     <div class="ct_slides  ct_slide_js_2">
                         <div class="ct_slide">
                             <?php
-                                foreach($bannerslidemid3->getA() as $value) {
+                                foreach($bannerslidemid2->getA() as $value) {
                                     echo'
                                     <img src="' . $value["img"] . '" alt="">
                                     <div class="ct_slide_text">
@@ -199,7 +191,7 @@
                         </div>
                          <div class="ct_slide">
                             <?php
-                                foreach($bannerslidemid3->getA() as $value) {
+                                foreach($bannerslidemid2->getA() as $value) {
                                     echo'
                                     <img src="' . $value["img"] . '" alt="">
                                     <div class="ct_slide_text">
@@ -213,7 +205,7 @@
                         </div>
                          <div class="ct_slide">
                             <?php
-                                foreach($bannerslidemid3->getA() as $value) {
+                                foreach($bannerslidemid2->getA() as $value) {
                                     echo'
                                     <img src="' . $value["img"] . '" alt="">
                                     <div class="ct_slide_text">
