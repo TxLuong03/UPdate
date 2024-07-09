@@ -60,21 +60,22 @@
         }
       }
       public function UpdateBannerTop($id,$title,$button,$img)
-      {
+      { try{
         $sql="UPDATE bannertop SET titlt=?, button=?, img=? WHERE id=?";
 
         $stmt = $this -> $conn -> prepare($sql);
-        $stmt->bind_param("sssi",$title,$bt,$img,$id);
-        if($stmt->execute())
-        {
+        if (!$stmt) {
+            throw new Exception("Prepare statement failed: " . $this->conn->error);
+        }
+          $stmt->execute([$title,$button, $img,, $id]);
           return true;
-          
-        }
-        else
-        {
-          throw new Exception("ERROR");
-          
-        }
+      }
+        catch (Exception $e) {
+          echo "Error: " . $e->getMessage();
+      } finally {
+          $stmt->close();
+          $this->conn->close();
+      }
         
       }
     }
