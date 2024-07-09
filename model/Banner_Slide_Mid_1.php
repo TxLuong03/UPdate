@@ -46,7 +46,7 @@
         if (!$stmt) {
             throw new Exception("Prepare statement failed: " . $this->conn->error);
         }
-        $stmt->execute([$title,$button, $img, $des, $id]);
+        $stmt->execute([$title,$bt, $img, $des, $id]);
         return true;
         }
           catch (Exception $e) {
