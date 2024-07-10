@@ -26,7 +26,12 @@ class HomeControl{
         require_once "./View_Ad/Banner_Dream.php.php";
     }
     
-
+    public function processingBannerMid(){
+        echo "this is the processing banner mid";
+    }
+    public function processingBannerBot(){
+        echo "this is the processing banner bot";
+    }
     public function Banner_Slide_Mid_1(){
         require_once "./View_Ad/Banner_Slide_Mid_1.php";
     }
