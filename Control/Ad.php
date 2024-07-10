@@ -7,18 +7,18 @@
       {
         session_unset();
         session_destroy();
-        header("location: ?act=SignIn.php");
+        header("location: ?act=SignIn");
         
       }
       public function SignIn()
       {
         $not="";
-        require_once "./view/SingIn.php";
+        require_once "./view/SingIn";
       }
       public function SingUp()
       {
         $not="";
-        require_once "./view/SingUp.php"; 
+        require_once "./view/SingUp"; 
       }
       public function processSingIn()
       {
@@ -52,13 +52,13 @@
           if($this->checkPassword($re_pass, $pass) == false)
           {
             $notice = "password and repasword is incorrect";
-            require_once "./view/SignUp.php";
+            require_once "./view/SignUp";
             exit();
           }
           if($acc->SingUp($user, $pass)){
-                header("Location:?act=Signin.php");
+                header("Location:?act=Signin");
             }else{
-                echo " failed";
+                echo " ERROR";
             }
             
         }
