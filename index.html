@@ -1,0 +1,87 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Yêu cầu autoload của Composer
+require_once "./autoload.php";
+
+use App\Control\Ad;
+use App\Control\Home;
+use App\model\BannerTop;
+
+// Lấy hành động từ URL, nếu không có thì mặc định là "/"
+$act = $_GET["act"] ?? "/";
+
+// Khởi tạo đối tượng AccountController
+$ad = new As();
+$home = new Home();
+$bannertop = new Banner_Top();
+switch ($act) {
+    case "SignUp":
+        $ad->SignUp();
+        break;
+    case "Signin":
+        $ad->SignIn();
+        break;
+    case "processSignUp":
+        $ad->processSignUp();
+        break;
+    case "processSignIn":
+        $ad->processSignIn();
+        break;
+    case "logout":
+        $ad->logout();
+        break;
+    case "home":
+        $home->home();
+        break;  
+    case "admin":
+        $home->admin();
+        break;
+    case "banertop":
+        $home->BannerTop();
+        break;
+    case "bannerdream":
+        $home->BannerDream();
+        break;
+    case "bannermid":
+        $home->BannerMid();
+        break;
+    case "bannerslidemid1":
+        $home->Banner_Slide_Mid_1();
+        break;
+    case "bannerslidemid2":
+        $home->Banner_Slide_Mid_2();
+        break;
+    case "bannerbottom":
+        $home->BannerBottom();
+        break;
+    case "bannerslidemid3":
+        $home->Banner_Slide_Mid_3();
+        break;
+    case "processingBannerTop":
+        $bannertop->updateBannerBottom($id,$img);
+        break;
+    case "processingBannerDream":
+        $home->processingBannerDream();
+        break;
+    case "processingBannerMid":
+        $homeController->processingBannerMid();
+        break;
+    case "processingBannerSlideMid1Update":
+        $home->processingBannerSlideMid1Update();
+        break;
+    case "processingBannerSlideMid2Update":
+        $home->processingBannerSlideMid2Update();
+        break;
+    case "processingBannerBot":
+        $home->processingBannerBot();
+        break;
+    case "processingBannerSlideMid3Update":
+        $home->processingBannerSlideMid3Update();
+        break;
+    default:
+        echo "404 - Page not found";
+}
+?>
