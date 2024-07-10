@@ -19,8 +19,8 @@ class HomeControl{
         require_once "./View_Ad/Banner_Mid.php";
     }
 
-    public function BannerBot(){
-        require_once "./View_Ad/Banner_Bot.php";
+    public function BannerBottom(){
+        require_once "./View_Ad/Banner_Bottom.php";
     }
     public function BannerDream(){
         require_once "./View_Ad/Banner_Dream.php.php";
